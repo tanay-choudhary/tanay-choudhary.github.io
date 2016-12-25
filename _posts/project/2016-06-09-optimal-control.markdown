@@ -11,7 +11,7 @@ website:
 Optimal Control of Kinematic Car Motion While Avoiding Obstacles
 -----------------
 
-Final project for [ME 454](http://www.mccormick.northwestern.edu/mechanical/courses/descriptions/454-optimal-control-of-nonlinear-systems.html): Numerical Methods in Optimal Control of Nonlinear Systems, spring 2016. Done in collaboration with [Abhishek Patil](https://patilnabhi.github.io/portfolio/).
+Final project for [ME 454](https://www.mccormick.northwestern.edu/mechanical/courses/descriptions/454-optimal-control-of-nonlinear-systems.html): Numerical Methods in Optimal Control of Nonlinear Systems, spring 2016. Done in collaboration with [Abhishek Patil](https://patilnabhi.github.io/portfolio/).
 
 <iframe src="https://player.vimeo.com/video/170123087" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -49,5 +49,5 @@ The different use-cases we tested were:
 
 As expected, the best (and fastest) performance was achieved in the simplest case without obstacles. But the errors from target position were still good enough with one and two obstacles. Below we show the results with and without obstacles:
 
-![room1](http://i.imgur.com/q2JBXgu.png)
-![room2](http://i.imgur.com/EXxowiA.png)
+![room1](https://i.imgur.com/q2JBXgu.png)
+![room2](https://i.imgur.com/EXxowiA.png)

@@ -9,12 +9,12 @@ carousel:
 - hough.png
 - hist_avg_15.jpg
 - quadfit.png
-website: http://github.com/tanay-bits/cvlib
+website: https://github.com/tanay-bits/cvlib
 ---
 Computer Vision Techniques
 -----------------
 
-Implementation of a few Computer Vision algorithms on Python and MATLAB as part of [EECS 332](http://www.mccormick.northwestern.edu/eecs/courses/descriptions/332.html) - Introduction to Computer Vision. Click on the links below to see the documentation, code, and data on the following topics:
+Implementation of a few Computer Vision algorithms on Python and MATLAB as part of [EECS 332](https://www.mccormick.northwestern.edu/eecs/courses/descriptions/332.html) - Introduction to Computer Vision. Click on the links below to see the documentation, code, and data on the following topics:
 
 + [Connected Component Labeling](https://github.com/tanay-bits/cvlib/tree/master/Connected%20Component%20Labeling)
 + [Morphological Operations](https://github.com/tanay-bits/cvlib/tree/master/Morphological%20Operations)

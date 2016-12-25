@@ -15,7 +15,7 @@ website: https://github.com/tanay-bits/sea
 Development of a Series Elastic Actuator for Robotic Applications
 -----------------
 
-In the summer of 2014, I worked at the Mechatronics Design Lab under the [Cyber-Physical Systems Innovation Hub](http://cps.iith.ac.in/cpsiit/) at IIT Hyderabad. There I designed, fabricated and tested a rotary Series Elastic Actuator (SEA), based on the [design of Eduardo Torres-Jara and Jessica Banks](http://groups.csail.mit.edu/lbr/mars/pubs/asimpleandscalableforceactuator50torresjarabanks.pdf). Advisor: [Prof. R. Prasanth Kumar](http://www.iith.ac.in/~rpkumar/), Associate Professor, Dept. of Mechanical and Aerospace Engineering.
+In the summer of 2014, I worked at the Mechatronics Design Lab under the [Cyber-Physical Systems Innovation Hub](https://cps.iith.ac.in/cpsiit/) at IIT Hyderabad. There I designed, fabricated and tested a rotary Series Elastic Actuator (SEA), based on the [design of Eduardo Torres-Jara and Jessica Banks](https://groups.csail.mit.edu/lbr/mars/pubs/asimpleandscalableforceactuator50torresjarabanks.pdf). Advisor: [Prof. R. Prasanth Kumar](https://www.iith.ac.in/~rpkumar/), Associate Professor, Dept. of Mechanical and Aerospace Engineering.
 
 ### Overview
 
@@ -32,7 +32,7 @@ In the summer of 2014, I worked at the Mechatronics Design Lab under the [Cyber-
 
 ### Project Dependencies:   
 
-<img src="http://fizz.kiersmcfarlane.com/wp-content/uploads/2014/02/arduino_logo1.png" alt="Arduino" height="130" width="130"> &nbsp;
-<img src="http://tech-clarity.com/wp-content/uploads/2014/05/PTC-Creo.jpg" alt="PTC Creo" height="130" width="130">
+<img src="https://fizz.kiersmcfarlane.com/wp-content/uploads/2014/02/arduino_logo1.png" alt="Arduino" height="130" width="130"> &nbsp;
+<img src="https://tech-clarity.com/wp-content/uploads/2014/05/PTC-Creo.jpg" alt="PTC Creo" height="130" width="130">
 
 

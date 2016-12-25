@@ -15,7 +15,7 @@ website:
 Gait Analysis and Control Design for Stair Ambulation with Lower-limb Powered Prostheses
 -----------------
 
-I spent my final undergraduate semester at the [Lauflabor Locomotion Lab](http://lauflabor.ifs-tud.de/doku.php), TU Darmstadt, Germany for my bachelor's thesis under the guidance of [Prof. André Seyfarth](http://lauflabor.ifs-tud.de/doku.php?id=lab_members:lab_members_andreseyfarth).   
+I spent my final undergraduate semester at the [Lauflabor Locomotion Lab](https://lauflabor.ifs-tud.de/doku.php), TU Darmstadt, Germany for my bachelor's thesis under the guidance of [Prof. André Seyfarth](https://lauflabor.ifs-tud.de/doku.php?id=lab_members:lab_members_andreseyfarth).   
 
 ### Overview:  
 
@@ -46,7 +46,7 @@ functions:
 ### Motion Capture Experiment:  
 
 <h5 style="color:black;">Click below to view a MATLAB animation of the motion capture experiment:</h5>
-[![Animation](http://img.youtube.com/vi/C5TJHx1fBmA/0.jpg)](https://www.youtube.com/watch?v=C5TJHx1fBmA "MATLAB animation of the motion capture experiment")   
+[![Animation](https://img.youtube.com/vi/C5TJHx1fBmA/0.jpg)](https://www.youtube.com/watch?v=C5TJHx1fBmA "MATLAB animation of the motion capture experiment")   
 
 A healthy subject was asked to walk across a level walkway and up and down six steps. Motion-capture marker and force plate data were recorded and processed on MATLAB using low-pass Butterworth filter to estimate kinematic and kinetic patterns of motion for the three gait modes - Stair Ascent (SA), Stair Descent (SD), and Level Gait (LG).  
 
@@ -61,7 +61,7 @@ The results from a motion-capture experiment concluded that stair ambulation is 
 level-ground walking. Hence, a single graded control signal is not a viable solution. The ability to distinguish between the three gaits and choose appropriate control signal for each is necessary.
 
 
-The Walk-Run Ankle from [SpringActive](http://www.springactive.com/) used in the experiment has a Series Elastic Actuator (SEA), to incorporate some of the inherent elastic nature of the human muscular system. After optimizing the spring stiffness based on peak motor power as well as energy required per gait cycle, significant energy savings were obtained:  
+The Walk-Run Ankle from [SpringActive](https://www.springactive.com/) used in the experiment has a Series Elastic Actuator (SEA), to incorporate some of the inherent elastic nature of the human muscular system. After optimizing the spring stiffness based on peak motor power as well as energy required per gait cycle, significant energy savings were obtained:  
 
 ![MotorER](/assets/img/project/motorER.jpg)
 [![MotorPower](/assets/img/project/powerprofiles.png)](/assets/img/project/powerprofiles.png "Click to see full size image")  
@@ -90,6 +90,6 @@ mobility challenges and thus improving quality of life.
 ### Project Dependencies:  
 
 <img src="https://static.wixstatic.com/media/4df942_6fde61c674654349a5c652751a603193.png/v1/fill/w_143,h_143,al_c,usm_0.50_1.20_0.00/4df942_6fde61c674654349a5c652751a603193.png" alt="MATLAB" height="110" width="110"> &nbsp; &nbsp;
-![Qualisys Track Manager](http://www.delsys.com/wp-content/uploads/2014/04/Qualisys_Logo.gif)
+![Qualisys Track Manager](https://www.delsys.com/wp-content/uploads/2014/04/Qualisys_Logo.gif)
 
 

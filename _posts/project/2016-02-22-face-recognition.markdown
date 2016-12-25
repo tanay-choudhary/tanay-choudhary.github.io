@@ -6,12 +6,12 @@ categories:
 - project
 img: facerec.png
 carousel:
-website: http://github.com/tanay-bits/cvlib/tree/master/Face%20Recognition
+website: https://github.com/tanay-bits/cvlib/tree/master/Face%20Recognition
 ---
 Real-Time Face Detection and Recognition (Eigenfaces and Fisherfaces) Using OpenCV+Python
 -----------------
 
-This is a small Python program I wrote in collaboration with [Abhishek Patil](https://patilnabhi.github.io/portfolio/) as a final project for [EECS 332](http://www.mccormick.northwestern.edu/eecs/courses/descriptions/332.html): Introduction to Computer Vision, winter 2016. It performs [face detection using Haar cascades](http://docs.opencv.org/3.1.0/d7/d8b/tutorial_py_face_detection.html#gsc.tab=0) based on the [Viola-Jones framework](https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework), as well as face recognition with a choice of two of the most popular algorithms for this purpose - EigenFaces and FisherFaces. For a detailed introduction to these techniques, refer to [this tutorial](http://docs.opencv.org/2.4/modules/contrib/doc/facerec/facerec_tutorial.html).
+This is a small Python program I wrote in collaboration with [Abhishek Patil](https://patilnabhi.github.io/portfolio/) as a final project for [EECS 332](https://www.mccormick.northwestern.edu/eecs/courses/descriptions/332.html): Introduction to Computer Vision, winter 2016. It performs [face detection using Haar cascades](https://docs.opencv.org/3.1.0/d7/d8b/tutorial_py_face_detection.html#gsc.tab=0) based on the [Viola-Jones framework](https://en.wikipedia.org/wiki/Viola%E2%80%93Jones_object_detection_framework), as well as face recognition with a choice of two of the most popular algorithms for this purpose - EigenFaces and FisherFaces. For a detailed introduction to these techniques, refer to [this tutorial](https://docs.opencv.org/2.4/modules/contrib/doc/facerec/facerec_tutorial.html).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nvPzOo8tyUs" frameborder="0" allowfullscreen></iframe>
 

@@ -15,7 +15,7 @@ Nonlinear Dynamics of the Tumbling Toy
 
 ### Overview:
 
-This was my final project for [Prof. Todd Murphey](http://www.mccormick.northwestern.edu/research-faculty/directory/profiles/murphey-todd.html)'s class, [Theory of Machines - Dynamics](http://www.mccormick.northwestern.edu/mechanical/courses/descriptions/314-theory-of-machines-dynamics.html). It involved modeling and simulating (on Mathematica) the impact-driven nonlinear dynamics of the tumbling toy, which consists of   
+This was my final project for [Prof. Todd Murphey](https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/murphey-todd.html)'s class, [Theory of Machines - Dynamics](https://www.mccormick.northwestern.edu/mechanical/courses/descriptions/314-theory-of-machines-dynamics.html). It involved modeling and simulating (on Mathematica) the impact-driven nonlinear dynamics of the tumbling toy, which consists of   
 
 +	a hollow wooden case with a pivot on each side, 
 +	a metal ball which can roll along the long axis of the case,
@@ -45,11 +45,11 @@ The modeling assumptions are:
 
 
 ### Coordinate Frames of the Modeled System:
-![Frames](http://i.imgur.com/qZo6kcu.png?1)   
+![Frames](https://i.imgur.com/qZo6kcu.png?1)   
 ![Transformations](/assets/img/project/tfs.png)   
 
 ### Problem Set-Up and Simulation:   
-The inertial and geometric parameters were sourced from [this paper](http://www.inm.uni-stuttgart.de/mitarbeiter/leine/papers/journal_publications/Leine_x_van_Campen_x_Glocker_-_Nonlinear_Dynamics_and_Modeling_of_Various_Wooden_Toys_with_Impact_and_Friction.pdf) by Leine, Campen, and Glocker, which used the Newton-Euler approach to solve this system. I instead used the Variational Principle (Lagrangian Dynamics) to get the equations of motion.   
+The inertial and geometric parameters were sourced from [this paper](https://www.inm.uni-stuttgart.de/mitarbeiter/leine/papers/journal_publications/Leine_x_van_Campen_x_Glocker_-_Nonlinear_Dynamics_and_Modeling_of_Various_Wooden_Toys_with_Impact_and_Friction.pdf) by Leine, Campen, and Glocker, which used the Newton-Euler approach to solve this system. I instead used the Variational Principle (Lagrangian Dynamics) to get the equations of motion.   
 
 The kinetic energy of the case and the ball were written in terms of their body velocities. The potential energy of each was found using homogeneous transformations to represent height in world frame. With the Lagrangian now available, 4 Euler-Lagrange equations (one corresponding to each state variable) were written. The RHS of each eq. was 0, since the only constraint (ball’s translation confined to the case) is embedded within the transformation matrix from the case to the ball, and there are no external forces.   
 

@@ -7,11 +7,11 @@ categories:
 img: shadowbax.gif
 carousel:
 - ShadowBax.png
-website: http://github.com/tanay-bits/baxter_skeletonteleop
+website: https://github.com/tanay-bits/baxter_skeletonteleop
 ---
 Skeleton Tracking and IK Based Teleoperation of a 14 DoF Dual Arm Manipulator 
 -----------------
-*Master's Independent Project, Winter 2016 | Advisor: [Dr. Jarvis Schultz](http://www.mccormick.northwestern.edu/research-faculty/directory/affiliated/schultz-jarvis.html)*
+*Master's Independent Project, Winter 2016 | Advisor: [Dr. Jarvis Schultz](https://www.mccormick.northwestern.edu/research-faculty/directory/affiliated/schultz-jarvis.html)*
 
 <iframe src="https://player.vimeo.com/video/159668224" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -26,7 +26,7 @@ The following packages are pre-requisites, in addition to the [Baxter SDK](https
 
 +   [skeletontracker_nu](https://github.com/NxRLab/skeletontracker_nu)
 +   [skeletonmsgs_nu](https://github.com/NxRLab/skeletonmsgs_nu)
-+   Optionally, if you want control over gripper and haptic (vibration) feedback, [wiimote](http://wiki.ros.org/wiimote)
++   Optionally, if you want control over gripper and haptic (vibration) feedback, [wiimote](https://wiki.ros.org/wiimote)
 
 After enabling Baxter, simply roslaunch *baxter_skeletonteleop.launch* to start the program. You should soon see an RViz window with the depth video overlaid on the skeleton tracker. Stand in front of your OpenNI-compliant depth-sensor (such as Kinect or Asus Xtion), and bring your hands to the start position (both hands near the torso) to begin tele-operating the robot. If there are multiple people coming in and out of the depth sensor's field of view, Baxter will track whichever user is most central.
 
@@ -37,13 +37,13 @@ The robot's joint speeds are intentionally capped to 30% of maximum, as a safety
 ### Implementation
 The system is implemented in ROS, with the following broad flow of processes:
 
-![flow](http://i.imgur.com/s1AfvWk.png)
+![flow](https://i.imgur.com/s1AfvWk.png)
 
 An object-oriented structure was adopted for the package; it has one main (node) script,`teleop.py`, and two dependent modules `limb_mover` and `ik_solver`. Inverse kinematics was selected as the teleoperation approach instead of geometry mapping based forward kinematics because numerous papers have shown that the former produces more reliable motions. It is also the pragmatic choice for the purpose of object manipulation, since exact human-mirroring is not the emphasis.
 
 The first challenge to be tackled was how to extract relevant information from the raw skeleton data. The `skeletontracker_nu` package was used to publish transforms provided by NITE as custom messages defined in the `skeletonmsgs_nu` package, on the `/skeletons` topic. The `teleop` node subscribes to this topic and uses the function `get_key_user` to determine the main user's ID, based on their position in the depth camera's field of view. Once the key user is found, looking up the relevant transforms becomes easy using a `tf.TransformListener` object.
 
-The next major hurdle was to get the inverse kinematics working reliably, so that Baxter actually tracks the user's hand motions. Firstly, the scaling factors in X, Y and Z for mapping a human's hand position relative to their torso, to Baxter's end-effector position relative to its base frame, were determined experimentally. By noting Baxter's endpoint state at the outward limits of its reach in all three directions, and comparing that with a human's arm measurements, I was able to find scaling factors that work well most of the time. Then I wrote the module `ik_solver` which utilizes Baxter's [IK Solver Service](http://sdk.rethinkrobotics.com/wiki/API_Reference#Inverse_Kinematics_Solver_Service) to find required joint angles to reach a desired endpoint pose. The `solve` method takes in the target end-effector position as a `geometry_msgs.Point()` and one of two end-effector orientations as a string ('FRONT' or 'DOWN', corresponding to front facing or down facing gripper orientations respectively). Since the skeleton tracker does not accurately detect wrist orientation, it is futile to solve IK for a continuous spectrum of orientations. Instead the two most useful ones for object manipulation are used, which the user can switch between by tilting their handheld controllers (PS3 or Wiimotes) accordingly. A horizontal controller signals 'FRONT' while a vertical one signals 'DOWN' to `solve`. Then the service request with this target pose is sent, and if a valid solution is found, the `solution` attribute (which holds a dictionary of joint angles) is updated. If at first a valid solution is not found, the IK solver is seeded with random noise for each of the limb's 7 joints, and this repeats for 50 iterations unless a valid solution is found.
+The next major hurdle was to get the inverse kinematics working reliably, so that Baxter actually tracks the user's hand motions. Firstly, the scaling factors in X, Y and Z for mapping a human's hand position relative to their torso, to Baxter's end-effector position relative to its base frame, were determined experimentally. By noting Baxter's endpoint state at the outward limits of its reach in all three directions, and comparing that with a human's arm measurements, I was able to find scaling factors that work well most of the time. Then I wrote the module `ik_solver` which utilizes Baxter's [IK Solver Service](https://sdk.rethinkrobotics.com/wiki/API_Reference#Inverse_Kinematics_Solver_Service) to find required joint angles to reach a desired endpoint pose. The `solve` method takes in the target end-effector position as a `geometry_msgs.Point()` and one of two end-effector orientations as a string ('FRONT' or 'DOWN', corresponding to front facing or down facing gripper orientations respectively). Since the skeleton tracker does not accurately detect wrist orientation, it is futile to solve IK for a continuous spectrum of orientations. Instead the two most useful ones for object manipulation are used, which the user can switch between by tilting their handheld controllers (PS3 or Wiimotes) accordingly. A horizontal controller signals 'FRONT' while a vertical one signals 'DOWN' to `solve`. Then the service request with this target pose is sent, and if a valid solution is found, the `solution` attribute (which holds a dictionary of joint angles) is updated. If at first a valid solution is not found, the IK solver is seeded with random noise for each of the limb's 7 joints, and this repeats for 50 iterations unless a valid solution is found.
 
 Now I was able to command Baxter to move each of its joints to track a user's hand motions, but there were two big problems:
 
@@ -75,5 +75,5 @@ Finally the Wiimote features were added to the system, after which the user was 
 ### Project Dependencies:
 
 <img src="https://static.wixstatic.com/media/4df942_bb8a7365e4874634aced781a6bc6ec95.png/v1/fill/w_161,h_43,al_c,usm_0.50_1.20_0.00/4df942_bb8a7365e4874634aced781a6bc6ec95.png" alt="ROS" height="80" width="100"> &nbsp; &nbsp;
-<img src="http://i.imgur.com/jXlM9XN.png?1" alt="Baxter" height="80" width="150"> &nbsp; &nbsp;
-<img src="http://www.ros.org/news/resources/2010/openni.png" alt="OpenNI" height="80" width="150">
+<img src="https://i.imgur.com/jXlM9XN.png?1" alt="Baxter" height="80" width="150"> &nbsp; &nbsp;
+<img src="https://www.ros.org/news/resources/2010/openni.png" alt="OpenNI" height="80" width="150">

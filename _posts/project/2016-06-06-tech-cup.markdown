@@ -12,7 +12,7 @@ website: https://github.com/tanay-bits/tanayChoudhary_ME433_2016/tree/master/HW1
 Android Line Follower Mobile Robot
 -----------------
 
-Final project for [ME 433](http://www.mccormick.northwestern.edu/mechanical/courses/descriptions/433-advanced-mechatronics.html): Advanced Mechatronics, spring 2016.
+Final project for [ME 433](https://www.mccormick.northwestern.edu/mechanical/courses/descriptions/433-advanced-mechatronics.html): Advanced Mechatronics, spring 2016.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GxuvCO3cdxI" frameborder="0" allowfullscreen></iframe>
 
@@ -42,7 +42,7 @@ Some of the other assignments during the course involved:
 
 Interfacing a TFT LCD to read IMU data. They talk to the PIC via SPI and I2C protocols respectively.
 
-![lcd](http://i.imgur.com/GC5Pug8.jpg)
+![lcd](https://i.imgur.com/GC5Pug8.jpg)
 
 Using PIC32+IMU as a mouse, via USB HID.
 
@@ -50,15 +50,15 @@ Using PIC32+IMU as a mouse, via USB HID.
 
 Getting a feel of laser cutting, by making a 3-sided box.
 
-![lc](http://i.imgur.com/m7ytXN5.png)
+![lc](https://i.imgur.com/m7ytXN5.png)
 
-![lc2](http://i.imgur.com/jnDrMxB.jpg) 
+![lc2](https://i.imgur.com/jnDrMxB.jpg) 
 
 
 Project Dependencies
 -----
 
 <img src="https://dfsuknfbz46oq.cloudfront.net/p/icons/androidstudio.png" alt="android studio" height="80" width="80"> &nbsp; &nbsp;
-<img src="http://www.macupdate.com/images/icons256/47528.png" alt="mplabx" height="80" width="80"> &nbsp; &nbsp;
+<img src="https://www.macupdate.com/images/icons256/47528.png" alt="mplabx" height="80" width="80"> &nbsp; &nbsp;
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/The_C_Programming_Language_logo.svg/140px-The_C_Programming_Language_logo.svg.png" alt="C" height="80" width="80"> &nbsp; &nbsp;
 

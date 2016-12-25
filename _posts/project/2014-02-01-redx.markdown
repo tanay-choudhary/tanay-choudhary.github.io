@@ -14,7 +14,7 @@ carousel:
 Rethinking Diagnostics with MIT Media Lab
 -----------------
 
-In my junior year as an undergraduate, I participated in a series of workshops conducted by the [Camera Culture](http://cameraculture.media.mit.edu/) group, MIT Media Lab. The workshops, which brought together engineers, designers and clinicians from all over India, aimed at developing portable, low-cost medical diagnostic devices for India's primary healthcare sector. Collaborating closely with researchers from MIT, IIT Bombay, Harvard Medical School and [LV Prasad Eye Institute](http://www.lvpei.org/) resulted in a highly stimulating learning experience. Each workshop was an intensive week-long process which started with team formation and brainstorming, going through several iterations of prototyping, and ended with each team pitching their proof-of-concept product to an open house.
+In my junior year as an undergraduate, I participated in a series of workshops conducted by the [Camera Culture](https://cameraculture.media.mit.edu/) group, MIT Media Lab. The workshops, which brought together engineers, designers and clinicians from all over India, aimed at developing portable, low-cost medical diagnostic devices for India's primary healthcare sector. Collaborating closely with researchers from MIT, IIT Bombay, Harvard Medical School and [LV Prasad Eye Institute](https://www.lvpei.org/) resulted in a highly stimulating learning experience. Each workshop was an intensive week-long process which started with team formation and brainstorming, going through several iterations of prototyping, and ended with each team pitching their proof-of-concept product to an open house.
 
 Some of the projects I worked on included:  
 
