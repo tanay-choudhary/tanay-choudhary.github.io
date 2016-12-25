@@ -1,0 +1,48 @@
+---
+layout: project
+title:  "RETHINKING DIAGNOSTICS WITH MIT MEDIA LAB"
+date:   2014-02-01 16:54:46
+categories:
+- project
+img: portfolio_06.jpg
+carousel:
+- league.jpg
+- redx.jpg
+- device.jpg
+- proto2.jpg
+---
+Rethinking Diagnostics with MIT Media Lab
+-----------------
+
+In my junior year as an undergraduate, I participated in a series of workshops conducted by the [Camera Culture](http://cameraculture.media.mit.edu/) group, MIT Media Lab. The workshops, which brought together engineers, designers and clinicians from all over India, aimed at developing portable, low-cost medical diagnostic devices for India's primary healthcare sector. Collaborating closely with researchers from MIT, IIT Bombay, Harvard Medical School and [LV Prasad Eye Institute](http://www.lvpei.org/) resulted in a highly stimulating learning experience. Each workshop was an intensive week-long process which started with team formation and brainstorming, going through several iterations of prototyping, and ended with each team pitching their proof-of-concept product to an open house.
+
+Some of the projects I worked on included:  
+
+### snapBP 
+*Jan 2014, IIT Bombay*   
+
+
+A non-invasive smartphone-integrated system comprising of a custom optics attachment and an app that enables cuff-free blood pressure measurement. Pairing two fiber-optical wires to a mobile phone's camera, we obtain the photoplethysmographic (PPG) signals from two locations on the body simultaneously. We resolve the PPG signal through use of the rolling shutter, a technique used in most low-cost camera sensors that renders each pixel row of an image one at a time. This gives the pulse transit time between the locations, which correlates with a person’s BP.  
+
+
+![snapBP](/assets/img/project/snapBP.jpg)   
+
+![demo1](/assets/img/project/akil.jpg)  
+
+<br />   
+
+### Eyecorder
+*Oct 2013, LVPEI Hyderabad*    
+
+
+A portable multispectral imaging platform for the anterior segment of the eye, which can capture, process and consolidate in real-time, multiple images taken over a range of focal planes to extract rich, clinically relevant visual information from different depths of the anterior segment.  
+
+![Eyecorder](/assets/img/project/eyecorder.jpg)   
+
+![device](/assets/img/project/device.jpg)   
+
+![demo2](/assets/img/project/citra.jpg)   
+
+<br />
+
+In both of the above, my efforts were spread into device design, optics, and image processing.

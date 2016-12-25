@@ -1,0 +1,38 @@
+---
+layout: project
+title:  "DEVELOPMENT OF A ROTARY SERIES ELASTIC ACTUATOR"
+date:   2014-06-25 16:54:46
+categories:
+- project
+img: sea.gif
+carousel:
+- Assembly.JPG
+- seaschemes.jpg
+- Front_View.JPG
+- springstiff.JPG
+website: https://github.com/tanay-bits/sea
+---
+Development of a Series Elastic Actuator for Robotic Applications
+-----------------
+
+In the summer of 2014, I worked at the Mechatronics Design Lab under the [Cyber-Physical Systems Innovation Hub](http://cps.iith.ac.in/cpsiit/) at IIT Hyderabad. There I designed, fabricated and tested a rotary Series Elastic Actuator (SEA), based on the [design of Eduardo Torres-Jara and Jessica Banks](http://groups.csail.mit.edu/lbr/mars/pubs/asimpleandscalableforceactuator50torresjarabanks.pdf). Advisor: [Prof. R. Prasanth Kumar](http://www.iith.ac.in/~rpkumar/), Associate Professor, Dept. of Mechanical and Aerospace Engineering.
+
+### Overview
+
+*  Reviewed existing SEA designs and theory, created 3D models of components with simplicity, scalability and low cost in mind
+*  Acquired components and fabricated parts using 3D printing as well as conventional machining
+*  Integrated the hardware, software and electronics modules to create a working prototype
+*  Performed various experiments (force sensing, manual homing, torque control, spring stiffness measurement) and achieved desirable results
+*  Incorporating a spring element in the motor actuator design simplifies the force control problem into that of position control, which is easy to achieve with just an encoder
+*  SEA also enhances safety, compliance and adaptability over traditional stiff actuators, which could enable more natural interaction with humans  
+
+<iframe width="420" height="315" src="https://www.youtube.com/embed/YzRIE0Vy--s" frameborder="0" allowfullscreen></iframe>
+
+<br />  
+
+### Project Dependencies:   
+
+<img src="http://fizz.kiersmcfarlane.com/wp-content/uploads/2014/02/arduino_logo1.png" alt="Arduino" height="130" width="130"> &nbsp;
+<img src="http://tech-clarity.com/wp-content/uploads/2014/05/PTC-Creo.jpg" alt="PTC Creo" height="130" width="130">
+
+

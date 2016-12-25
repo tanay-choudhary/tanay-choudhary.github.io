@@ -1,22 +1,25 @@
 <div id="footerwrap">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4">
+            <!-- <div class="col-lg-4">
                 <h4>About</h4>
                 <div class="hline-w"></div>
                 <p>{{ site.about }}</p>
-            </div>
+            </div> -->
             <div class="col-lg-4">
-                <h4>Social Links</h4>
+                <h4>Around the Web</h4>
                 <div class="hline-w"></div>
                 <p>
                     {% for network in site.social %}
                         <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-{{ network.title }}"></i></a>
                     {% endfor %}
+                    &nbsp;
+                    <a class="github-button" href="https://github.com/tanay-bits" data-style="mega" aria-label="Follow @tanay-bits on GitHub">Follow @tanay-bits</a>
+                    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
                 </p>
             </div>
             <div class="col-lg-4">
-                <h4>Our Bunker</h4>
+                <h4>My Bunker</h4>
                 <div class="hline-w"></div>
                 <p>
                     {% for line in site.address.first.lines %}
@@ -24,6 +27,14 @@
                     {% endfor %}
                 </p>
             </div>
-        </div><! --/row -->
-    </div><! --/container -->
-</div><! --/footerwrap -->
+            <div class="col-lg-4">
+                <h4>Credits</h4>
+                <div class="hline-w"></div>
+                <p>
+                    This site is based on the Solid theme <br>
+                    created by blacktie.co
+                </p>
+            </div>
+        </div><!-- /row -->
+    </div><!-- /container -->
+</div><!-- /footerwrap -->

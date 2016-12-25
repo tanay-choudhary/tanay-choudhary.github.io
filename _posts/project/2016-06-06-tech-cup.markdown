@@ -1,0 +1,64 @@
+---
+layout: project
+title:  "ANDROID LINE FOLLOWER MOBILE ROBOT"
+date:   2016-06-06 11:54:46
+categories:
+- project
+img: mariokart.jpg
+carousel:
+- miniracer.jpg
+website: https://github.com/tanay-bits/tanayChoudhary_ME433_2016/tree/master/HW16-TechCup
+---
+Android Line Follower Mobile Robot
+-----------------
+
+Final project for [ME 433](http://www.mccormick.northwestern.edu/mechanical/courses/descriptions/433-advanced-mechatronics.html): Advanced Mechatronics, spring 2016.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GxuvCO3cdxI" frameborder="0" allowfullscreen></iframe>
+
+In this project I designed, fabricated, and programmed a mobile robot made of laser cut and 3D printed parts, which follows a Mario Kart circuit -- for Northwestern's Tech Cup 2016. I also created an app using Android Studio, with sliders and live camera preview to adjust RGB thresholds on-the-go for detecting colored line, and programmed a PIC32MX250128B MCU to receive the line position via USB CDC and perform PD control on wheel motors.
+
+The Android app thresholds across RGB over 3 bands of 30 rows each from the top, middle, and bottom of the camera's view. The selected pixels have Red content more than the top slider's value, and Green and Blue content less than the middle and lower sliders' values respectively.
+
+The column Center of Mass (CoM) of all selected pixels is calculated, and its offset from the middle (320, since resolution is 640x480) is sent to the PIC. If no pixel is thresholded, the value sent is 0.
+
+The PIC receives the offset (~ error from desired heading) via USB CDC and
+
++   if it's > ERRORBAND or < -ERRORBAND, makes the bot turn right or left using PD control on each wheel
++   if it's exactly 0 (no CoM), reverses both motors' directions and moves back slowly so that it can attempt to locate the line again.
++   if it's between -ERRORBAND and +ERRORBAND, it makes the bot move straight by turning both motors at high speed.
+Kp = 1.0 and Kd = 0.5 seem to work well for me. The bot was successfully able to complete the circuit.
+
+The PCB schematic shown in the image below was used:
+
+![schematic](/assets/img/project/schematic.png)
+
+After soldering all components onto the PCB as well as the H-bridge breakout board:
+
+![soldered](https://github.com/ndm736/ME433_2016/raw/master/nHbridge.JPG)
+![soldered2](https://github.com/ndm736/ME433_2016/raw/master/lHbridge.JPG)
+
+Some of the other assignments during the course involved:
+
+Interfacing a TFT LCD to read IMU data. They talk to the PIC via SPI and I2C protocols respectively.
+
+![lcd](http://i.imgur.com/GC5Pug8.jpg)
+
+Using PIC32+IMU as a mouse, via USB HID.
+
+<iframe src="https://player.vimeo.com/video/169388299" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+Getting a feel of laser cutting, by making a 3-sided box.
+
+![lc](http://i.imgur.com/m7ytXN5.png)
+
+![lc2](http://i.imgur.com/jnDrMxB.jpg) 
+
+
+Project Dependencies
+-----
+
+<img src="https://dfsuknfbz46oq.cloudfront.net/p/icons/androidstudio.png" alt="android studio" height="80" width="80"> &nbsp; &nbsp;
+<img src="http://www.macupdate.com/images/icons256/47528.png" alt="mplabx" height="80" width="80"> &nbsp; &nbsp;
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/The_C_Programming_Language_logo.svg/140px-The_C_Programming_Language_logo.svg.png" alt="C" height="80" width="80"> &nbsp; &nbsp;
+
