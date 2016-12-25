@@ -1,11 +1,11 @@
 ### GENERAL SETTINGS ###
 
 # Site settings
-title: TANAY CHOUDHARY
+title: Tanay Choudhary
 description: "Master of Science in Robotics at Northwestern University"
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
-url: "http://tanay-bits.github.io"
+url: "https://tanay-choudhary.github.io"
 
 # Build settings
 markdown: kramdown
@@ -27,9 +27,9 @@ colors:  #in hex code if not noted else
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
 social:
   - title: linkedin
-    url: http://www.linkedin.com/in/tanayc
+    url: https://www.linkedin.com/in/tanayc
   - title: facebook
-    url: http://www.facebook.com/tanay.forrest
+    url: https://www.facebook.com/tanay.forrest
 
     
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
