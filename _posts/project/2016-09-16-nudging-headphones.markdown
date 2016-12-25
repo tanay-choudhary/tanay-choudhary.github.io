@@ -4,7 +4,7 @@ title:  "PROTOTYPING NUDGING HEADPHONES"
 date:   2016-09-16 11:54:46
 categories:
 - project
-img: akg.jpg
+img: harman.png
 carousel:
 website:
 ---
