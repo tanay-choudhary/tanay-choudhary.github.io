@@ -4,7 +4,7 @@ title:  "VISUAL SERVOING TO SORT OBJECTS WITH BAXTER USING ROS"
 date:   2015-12-13 16:54:46
 categories:
 - project
-img: bax.gif
+img: baxter_builder.png
 carousel:
 website: http://github.com/opti545/baxter_builder
 ---
