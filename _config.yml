@@ -35,8 +35,7 @@ social:
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:
   - lines: 
-    - 2141 Maple Ave,
-    - Evanston IL-60201,
+    - Cambridge MA,
     - United States.
 
 email: tanay@u.northwestern.edu
