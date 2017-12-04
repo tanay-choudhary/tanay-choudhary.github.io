@@ -2,7 +2,7 @@
 
 # Site settings
 title: Tanay Choudhary
-description: "Master of Science in Robotics at Northwestern University"
+description: "Roboticist | Vecna Robotics | Northwestern University | BITS Pilani"
 analytics: #Google analytics code in the format XX-nnnnnnnn-n
 baseurl: "" #important: start with /
 url: "https://tanay-choudhary.github.io"
@@ -28,8 +28,8 @@ colors:  #in hex code if not noted else
 social:
   - title: linkedin
     url: https://www.linkedin.com/in/tanayc
-  - title: facebook
-    url: https://www.facebook.com/tanay.forrest
+  - title: github
+    url: https://github.com/tanay-bits
 
     
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
